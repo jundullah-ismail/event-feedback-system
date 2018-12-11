@@ -1,7 +1,8 @@
 export interface  Event {
   id: number;
   name: string;
-  code: string;
-  name: string;
-  email: string;
+  venue: string;
+  eventDate: Date;
+  totalAttendees: number;
+  sponsorship: SponsorshipType;
 }
