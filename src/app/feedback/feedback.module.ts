@@ -64,7 +64,7 @@ import {CohortStatusPipe} from './cohort-status.pipe';
   exports: []
 
 })
-export class AcademyModule {
+export class FeedbackModule {
 }
 
 
