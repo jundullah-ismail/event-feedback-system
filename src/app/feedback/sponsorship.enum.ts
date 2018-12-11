@@ -1,4 +1,4 @@
-enum SponsorshipType {
+export enum SponsorshipType {
   SELFSPONSOR,
   CROWDFUNDING,
   PLATINUM,
