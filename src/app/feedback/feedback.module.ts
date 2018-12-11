@@ -50,6 +50,7 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonToggleModule,
   ],
   declarations: [
+
     ],
   exports: []
 
