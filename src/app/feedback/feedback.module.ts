@@ -23,6 +23,8 @@ import {
 } from '@angular/material';
 
 import {MatTableModule} from '@angular/material/table';
+import {EventListPage} from './event-list.page';
+import {EventService} from '../../services/event.service';
 
 @NgModule({
   imports: [
@@ -50,9 +52,13 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonToggleModule,
   ],
   declarations: [
+    EventListPage,
+  ],
+  exports: [],
 
-    ],
-  exports: []
+  providers: [
+    EventService
+  ]
 
 })
 export class FeedbackModule {

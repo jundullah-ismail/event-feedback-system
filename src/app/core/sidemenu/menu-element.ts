@@ -7,23 +7,16 @@ export const menus = [
     'chip': {'value': 1, 'color': 'accent'},
   },
   {
-    'name': 'Academy',
+    'name': 'Event',
     'icon': 'list',
     'link': false,
     'open': false,
     'chip': false,
     'sub': [
       {
-        'name': 'All Cohorts',
+        'name': 'All events',
         'icon': 'filter_list',
-        'link': '/academy/cohorts/list',
-        'chip': {'value': 2, 'color': 'accent'},
-        'open': false,
-      },
-      {
-        'name': 'All Apprentices',
-        'icon': 'filter_list',
-        'link': '/academy/apprentices/list',
+        'link': '/feedback/events/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },

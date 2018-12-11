@@ -6,7 +6,7 @@ import {Participant} from '../app/feedback/participant.model';
 import {Sponsorship} from '../app/feedback/sponsorship.model';
 
 @Injectable()
-export class EventFeedbackSystem {
+export class EventService {
   constructor(private http: HttpClient) {
     console.log('constructor is working');
   }

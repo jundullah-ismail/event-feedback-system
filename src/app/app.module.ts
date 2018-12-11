@@ -10,7 +10,7 @@ import {appRoutes} from './app.routes';
 import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
-import {CohortStatusPipe} from './academy/cohort-status.pipe';
+import {FeedbackModule} from './feedback/feedback.module';
 
 
 @NgModule({
@@ -26,6 +26,7 @@ import {CohortStatusPipe} from './academy/cohort-status.pipe';
     MainModule,
     DashboardModule,
     AcademyModule,
+    FeedbackModule,
   ],
   providers: [AcademyService],
   bootstrap: [AppComponent]
