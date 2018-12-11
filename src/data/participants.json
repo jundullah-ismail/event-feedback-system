@@ -6,7 +6,7 @@
     "gender": "FEMALE",
     "phoneNo" : "60142435467",
     "IC" : "970685212345",
-    "feedBackType" : "PARTICIPANT"
+    "feedbackType" : "PARTICIPANT"
   },
   {
     "name": "JOHNNY MIXCO",
@@ -15,7 +15,7 @@
     "gender": "MALE",
     "phoneNo" : "60142435467",
     "IC" : "970585212345",
-    "feedBackType" : "PARTICIPANT"
+    "feedbackType" : "PARTICIPANT"
   },
   {
     "name": "JOHNNY MIXCO",
@@ -24,7 +24,7 @@
     "gender": "MALE",
     "phoneNo" : "60142435467",
     "IC" : "970685212345",
-    "feedBackType" : "PARTICIPANT"
+    "feedbackType" : "PARTICIPANT"
   },
   {
     "name": "SAM REDRICK",
@@ -33,6 +33,6 @@
     "gender": "FEMALE",
     "phoneNo" : "601434445467",
     "IC" : "920685212345",
-    "feedBackType" : "PARTICIPANT"
+    "feedbackType" : "PARTICIPANT"
   }
 ]
