@@ -6,5 +6,6 @@ export interface  Event {
   venue: string;
   eventDate: Date;
   totalAttendees: number;
+
   sponsorship: Sponsorship;
 }

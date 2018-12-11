@@ -1,6 +1,6 @@
 import {FeedbackType} from './feedback-type.enum';
 
-export interface ParticipantModel {
+export interface Participant {
   name: string;
   email: string;
   age: number;

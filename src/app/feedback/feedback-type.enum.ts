@@ -1,4 +1,4 @@
-export enum feedback {
+export enum FeedbackType {
   PARTICIPANT,
   GUEST
 }
