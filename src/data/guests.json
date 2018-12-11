@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John Langley",
+    "email": "langley@terang.asia",
+    "age": 56,
+    "gender": "MALE",
+    "phoneNo" : "60122251149",
+    "feedbackType" : "GUEST"
+  },
+  {
+    "name": "Fatima Mahmood",
+    "email": "mahmoodf@terang.asia",
+    "age": 56,
+    "gender": "FEMALE",
+    "phoneNo" : "60122281149",
+    "feedbackType" : "GUEST"
+  },
+  {
+    "name": "Ibrahim Abaker",
+    "email": "abaker@terang.asia",
+    "age": 32,
+    "gender": "MALE",
+    "phoneNo" : "60149251149",
+    "feedbackType" : "GUEST"
+  }
+]
