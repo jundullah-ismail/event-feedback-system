@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Event} from '../app/feedback/event.model';
-import {Participant} from '../app/feedback/participant.model';
+import {ParticipantModel} from '../app/feedback/participant.model';
 
 @Injectable()
 export class EventService {
@@ -30,17 +30,17 @@ export class ParticipantService {
     console.log('constructor is working');
   }
 
-  findParticipants(): Observable<Participant[]> {
+  findParticipants(): Observable<ParticipantModel[]> {
     console.log('findParticipant is working');
 
-    return this.http.get<Participant[]>('data/participant.json');
+    return this.http.get<ParticipantModel[]>('data/participant.json');
 
   }
 
-  findParticipant(): Observable<Participant> {
+  findParticipant(): Observable<ParticipantModel> {
     console.log('findParticipant is working');
 
-    return this.http.get<Participant>('data/participant.json');
+    return this.http.get<ParticipantModel>('data/participant.json');
   }
 
 }
