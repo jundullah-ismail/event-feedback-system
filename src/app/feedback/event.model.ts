@@ -1,3 +1,5 @@
+import {SponsorshipType} from './sponsorship.enum';
+
 export interface  Event {
   id: number;
   name: string;
