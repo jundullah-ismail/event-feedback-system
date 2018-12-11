@@ -1,0 +1,38 @@
+[
+  {
+    "name": "RAZ DUVAL",
+    "email": "rdval42@yay.com",
+    "age": 12,
+    "gender": "FEMALE",
+    "phoneNo" : "60142435467",
+    "IC" : "970685212345",
+    "feedBackType" : "PARTICIPANT"
+  },
+  {
+    "name": "JOHNNY MIXCO",
+    "email": "johny12@yay.com",
+    "age": 45,
+    "gender": "MALE",
+    "phoneNo" : "60142435467",
+    "IC" : "970585212345",
+    "feedBackType" : "PARTICIPANT"
+  },
+  {
+    "name": "JOHNNY MIXCO",
+    "email": "johny12@yay.com",
+    "age": 12,
+    "gender": "MALE",
+    "phoneNo" : "60142435467",
+    "IC" : "970685212345",
+    "feedBackType" : "PARTICIPANT"
+  },
+  {
+    "name": "SAM REDRICK",
+    "email": "sredrick2@yay.com",
+    "age": 34,
+    "gender": "FEMALE",
+    "phoneNo" : "601434445467",
+    "IC" : "920685212345",
+    "feedBackType" : "PARTICIPANT"
+  }
+]
