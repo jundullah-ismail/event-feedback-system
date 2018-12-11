@@ -1,9 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Event} from '../app/academy/event.model';
-
-import {Sponsorship} from '../app/feedback/sponsorship.model';
+import {Event} from '../app/feedback/event.model';
+import {Participant} from '../app/feedback/participant.model';
 
 @Injectable()
 export class EventService {
@@ -23,7 +22,6 @@ export class EventService {
 
     return this.http.get<Event>('data/event.json');
   }
-
 
   findParticipants(): Observable<Participant[]> {
     console.log('findParticipants is working');
