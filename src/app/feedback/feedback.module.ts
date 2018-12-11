@@ -23,11 +23,6 @@ import {
 } from '@angular/material';
 
 import {MatTableModule} from '@angular/material/table';
-import {ApprenticeListPage} from './apprentice-list.page';
-import {CohortListPage} from './cohort-list.page';
-import {ApprenticeDetailPage} from './apprentice-detail.page';
-import {CohortDetailPage} from './cohort-detail.page';
-import {CohortStatusPipe} from './cohort-status.pipe';
 
 @NgModule({
   imports: [
@@ -55,16 +50,11 @@ import {CohortStatusPipe} from './cohort-status.pipe';
     MatButtonToggleModule,
   ],
   declarations: [
-    ApprenticeListPage,
-    ApprenticeDetailPage,
-    CohortListPage,
-    CohortDetailPage,
-    CohortStatusPipe,
-  ],
+    ],
   exports: []
 
 })
-export class AcademyModule {
+export class FeedbackModule {
 }
 
 
