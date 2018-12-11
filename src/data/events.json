@@ -4,21 +4,18 @@
     "venue": "Kuala Lumpur",
     "eventdate": "2018-12-11",
     "totalattendees": 15,
-    "sponsorship": "Self-Sponsor",
-    "feedback": "Food"
+    "sponsorship": "Self-Sponsor"
   },{
     "name": "Public Speaking",
     "venue": "Selangor",
     "eventdate": "2018-12-11",
     "totalattendees": 10,
-    "sponsorship": "Crowd Funding",
-    "feedback": "Place"
+    "sponsorship": "Crowd Funding"
   },{
     "name": "Machine Learning",
     "venue": "TTDI",
     "eventdate": "2018-12-11",
     "totalattendees": 5,
-    "sponsorship": "Platinum",
-    "feedback": "Content"
+    "sponsorship": "Platinum"
   }
 ]
