@@ -3,7 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Apprentice} from '../app/academy/apprentice.model';
 import {Cohort} from '../app/academy/cohort.model';
-import {Organizer} from '../app/feedback/organizer.model';
 
 @Injectable()
 export class AcademyService {
@@ -23,7 +22,7 @@ export class AcademyService {
     return this.http.get<Apprentice[]>('data/apprentices.json');
   }
 
-  findOrganizersById(id: number): Observable<Organizer[]> {
-    return this.http.get<Organizer[]>('data/organizers.json');
+  findApprenticeById(id: number): Observable<Apprentice> {
+    return this.http.get<Apprentice>('data/apprentice.json');
   }
 }

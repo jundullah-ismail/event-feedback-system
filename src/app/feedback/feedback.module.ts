@@ -27,11 +27,9 @@ import {EventService} from '../../services/event.service';
 import {SponsorListPage} from './sponsor-list.page';
 import {SponsorDetailPage} from './sponsor-detail.page';
 import {OrganizerDetailPage} from './organizer-detail.page';
-import {OrganizerSourceCode} from './organizer.source-code';
 import {OrganizerListPage} from './organizer-list.page';
 import {EventDetailPage} from './event-detail.page';
 import {EventListPage} from './event-list.page';
-import {EventDataSource} from './event.data-source';
 
 @NgModule({
   imports: [
@@ -63,10 +61,8 @@ import {EventDataSource} from './event.data-source';
     SponsorListPage,
     SponsorDetailPage,
     OrganizerDetailPage,
-    OrganizerSourceCode,
     OrganizerListPage,
     EventDetailPage,
-    EventDataSource,
   ],
   exports: [],
 

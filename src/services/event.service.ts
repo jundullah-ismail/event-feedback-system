@@ -59,7 +59,7 @@ export class EventService {
   findOrganizers(): Observable<Organizer[]> {
     console.log('findOrganizers is working');
 
-    return this.http.get<Organizer[]>('data/organizer.json');
+    return this.http.get<Organizer[]>('data/organizers.json');
   }
 
 }

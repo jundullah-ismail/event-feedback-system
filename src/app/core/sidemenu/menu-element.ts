@@ -28,7 +28,7 @@ export const menus = [
       },{
         'name': 'All Organizers',
         'icon': 'filter_list',
-        'link': 'feedback/organizers/list',
+        'link': '/feedback/organizers/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },
