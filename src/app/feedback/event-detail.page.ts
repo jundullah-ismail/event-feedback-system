@@ -19,6 +19,8 @@ export class EventDetailPage implements OnInit {
     this.mainForm = this.form.group({
       name: ['', Validators.required],
       venue: ['', Validators.required],
+      code: ['', Validators.required],
+      totalAttendees: ['', Validators.required],
       //email: ['', Validators.required],
     });
 
