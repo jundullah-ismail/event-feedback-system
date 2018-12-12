@@ -14,6 +14,7 @@ export class EventListPage implements OnInit {
   public columns = ['id', 'code', 'name', 'venue'];
   public dataSource: EventDataSource;
 
+
   constructor(private eventService: EventService,
               private router: Router) {
   }
@@ -24,6 +25,6 @@ export class EventListPage implements OnInit {
 
   view(event: Event): void {
     console.log(JSON.stringify(event));
-    this.router.navigate(['/feedback/event/list', event.code]);
+    this.router.navigate(['/feedback/events/', event.code]);
   }
 }
