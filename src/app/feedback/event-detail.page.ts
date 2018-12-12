@@ -3,7 +3,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {Event} from './event.model';
 import {Observable} from 'rxjs';
 import {EventService} from '../../services/event.service';
-import {ActivatedRoute, Router} from '@angular/router';
+
 @Component({
   selector: 'trg-event-detail',
   templateUrl: './event-detail.page.html',
@@ -15,17 +15,10 @@ export class EventDetailPage implements OnInit {
   event$: Observable<Event> = null;
 
   constructor(private form: FormBuilder,
-              private eventService: EventService,
-              private router: Router,
-              private route: ActivatedRoute) {
-
-    this.route.params.subscribe((params: { code: string }) => {
-      console.log(params);
-    });
-
+              private eventService: EventService,) {
     this.mainForm = this.form.group({
       name: ['', Validators.required],
-      venue: ['', Validators.minLength(6)],
+      venue: ['', Validators.required],
       //email: ['', Validators.required],
     });
 
