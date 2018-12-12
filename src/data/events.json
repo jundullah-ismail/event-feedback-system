@@ -1,6 +1,7 @@
 [
   {
     "id": 5,
+    "code": "ET0001",
     "name": "Lets Learn to Code",
     "venue": "Kuala Lumpur",
     "eventDate": "2018-12-11",
@@ -9,6 +10,7 @@
   },
   {
     "id": 10,
+    "code": "ET0002",
     "name": "Public Speaking",
     "venue": "Selangor",
     "eventDate": "2018-12-11",
@@ -17,6 +19,7 @@
   },
   {
     "id": 6,
+    "code": "ET0003",
     "name": "Machine Learning",
     "venue": "TTDI",
     "eventDate": "2018-12-11",

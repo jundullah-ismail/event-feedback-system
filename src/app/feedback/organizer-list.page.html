@@ -26,11 +26,6 @@
           <mat-cell *matCellDef="let row"> {{row.name}}</mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="venue">
-          <mat-header-cell *matHeaderCellDef> Name</mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.venue}}</mat-cell>
-        </ng-container>
-
         <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
         <mat-row *matRowDef="let row; columns: columns;"
                  (click)="view(row)"></mat-row>
