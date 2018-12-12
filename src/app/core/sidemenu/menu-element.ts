@@ -14,7 +14,7 @@ export const menus = [
     'chip': false,
     'sub': [
       {
-        'name': 'All events',
+        'name': 'All Events',
         'icon': 'filter_list',
         'link': '/feedback/events/list',
         'chip': {'value': 2, 'color': 'accent'},
@@ -23,6 +23,12 @@ export const menus = [
         'name': 'All Sponsors',
         'icon': 'filter_list',
         'link': '/feedback/sponsors/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
+      },{
+        'name': 'All Organizers',
+        'icon': 'filter_list',
+        'link': 'feedback/organizers/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
       },

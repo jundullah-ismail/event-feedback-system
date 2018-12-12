@@ -15,7 +15,7 @@ export const appRoutes: Routes = [{
     {path: 'feedback/sponsors/list', component: SponsorListPage},
     {path: 'feedback/sponsors/:code', component: SponsorDetailPage},
     {path: 'feedback/events/:code', component: EventDetailPage},
-    {path: 'feedback/organizer/list', component: OrganizerListPage},
-    {path: 'feedback/organizer/:code', component: OrganizerDetailPage},
+    {path: 'feedback/organizers/list', component: OrganizerListPage},
+    {path: 'feedback/organizers/:code', component: OrganizerDetailPage},
   ]
 }];
