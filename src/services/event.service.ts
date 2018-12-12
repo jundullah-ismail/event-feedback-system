@@ -14,14 +14,14 @@ export class EventService {
   findEvents(): Observable<Event[]> {
     console.log('findEvents is working');
 
-    return this.http.get<Event[]>('data/events.json');
+    return this.http.get<Event[]>('data/event.json');
 
   }
-
-  findEvent(): Observable<Event> {
-    console.log('findEvent is working');
+  findEventById(): Observable<Event> {
+    console.log('findEventById is working');
 
     return this.http.get<Event>('data/event.json');
+
   }
 
   findParticipants(): Observable<Participant[]> {
