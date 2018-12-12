@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {Event} from '../app/feedback/event.model';
 import {Participant} from '../app/feedback/participant.model';
 import {Sponsorship} from '../app/feedback/sponsorship.model';
+import {Organizer} from '../app/feedback/organizer.model';
 
 @Injectable()
 export class EventService {
@@ -42,6 +43,18 @@ export class EventService {
     console.log('findSponsor is working');
 
     return this.http.get<Sponsorship>('data/sponsor.json');
+  }
+
+  findOrganizerById(): Observable<Organizer> {
+    console.log('findOrganizerById is working');
+
+    return this.http.get<Organizer>('data/organizer.json');
+  }
+
+  findOrganizers(): Observable<Organizer[]> {
+    console.log('findOrganizers is working');
+
+    return this.http.get<Organizer[]>('data/organizer.json');
   }
 
 

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Suzuki Jununingham",
+    "commiteeNum": 10,
+    "code": "OT001"
+  },
+  {
+    "id": 2,
+    "name": "Toyota Saponghai",
+    "commiteeNum": 10,
+    "code": "OT002"
+  },
+  {
+    "id": 3,
+    "name": "Kuda Ferrari",
+    "commiteeNum": 11,
+    "code": "OT003"
+  }
+]
