@@ -3,22 +3,24 @@
     "id": 5,
     "name": "Lets Learn to Code",
     "venue": "Kuala Lumpur",
-    "eventdate": "2018-12-11",
-    "totalattendees": 15,
+    "eventDate": "2018-12-11",
+    "totalAttendees": 15,
     "sponsorship": "Self-Sponsor"
-  },{
+  },
+  {
     "id": 10,
     "name": "Public Speaking",
     "venue": "Selangor",
-    "eventdate": "2018-12-11",
-    "totalattendees": 10,
+    "eventDate": "2018-12-11",
+    "totalAttendees": 10,
     "sponsorship": "Crowd Funding"
-  },{
+  },
+  {
     "id": 6,
     "name": "Machine Learning",
     "venue": "TTDI",
-    "eventdate": "2018-12-11",
-    "totalattendees": 5,
+    "eventDate": "2018-12-11",
+    "totalAttendees": 5,
     "sponsorship": "Platinum"
   }
 ]
