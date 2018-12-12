@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Event} from '../app/feedback/event.model';
 import {Participant} from '../app/feedback/participant.model';
-import {Sponsorship} from '../app/feedback/sponsorship.model';
+import {Sponsor} from '../app/feedback/sponsor.model';
 
 @Injectable()
 export class EventService {
@@ -38,11 +38,16 @@ export class EventService {
   }
 
 
-  findSponsorship(): Observable<Sponsorship> {
-    console.log('findSponsor is working');
+  findSponsors(): Observable<Sponsor[]> {
+    console.log('findSponsorships is working');
 
-    return this.http.get<Sponsorship>('data/sponsor.json');
+    return this.http.get<Sponsor[]>('data/sponsors.json');
   }
 
+  findSponsorById(): Observable<Sponsor> {
+    console.log('findSponsorById is working');
+
+    return this.http.get<Sponsor>('data/sponsor.json');
+  }
 
 }

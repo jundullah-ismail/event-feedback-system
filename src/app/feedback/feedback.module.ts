@@ -25,6 +25,8 @@ import {
 import {MatTableModule} from '@angular/material/table';
 import {EventListPage} from './event-list.page';
 import {EventService} from '../../services/event.service';
+import {SponsorListPage} from './sponsor-list.page';
+import {SponsorDetailPage} from './sponsor-detail.page';
 
 @NgModule({
   imports: [
@@ -53,6 +55,8 @@ import {EventService} from '../../services/event.service';
   ],
   declarations: [
     EventListPage,
+    SponsorListPage,
+    SponsorDetailPage,
   ],
   exports: [],
 

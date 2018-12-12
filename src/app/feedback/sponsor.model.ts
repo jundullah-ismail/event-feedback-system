@@ -1,7 +1,9 @@
 import {SponsorshipType} from './sponsorship.enum';
 
 export interface Sponsor {
+  id: number;
+  code: string;
   companyName: string;
-  type: SponsorshipType;
+  sponsorshipType: SponsorshipType;
   amountSponsored: string;
 }

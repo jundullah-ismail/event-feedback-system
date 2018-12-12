@@ -1,4 +1,4 @@
-import {Sponsorship} from './sponsorship.model';
+import {Sponsor} from './sponsor.model';
 
 export interface  Event {
   id: number;
@@ -6,6 +6,5 @@ export interface  Event {
   venue: string;
   eventDate: Date;
   totalAttendees: number;
-
-  sponsorship: Sponsorship;
+  sponsorship: Sponsor;
 }
