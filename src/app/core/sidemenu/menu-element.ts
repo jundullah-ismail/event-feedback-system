@@ -19,6 +19,12 @@ export const menus = [
         'link': '/feedback/events/list',
         'chip': {'value': 2, 'color': 'accent'},
         'open': false,
+      },{
+        'name': 'All Sponsors',
+        'icon': 'filter_list',
+        'link': '/feedback/sponsors/list',
+        'chip': {'value': 2, 'color': 'accent'},
+        'open': false,
       },
     ]
   },
