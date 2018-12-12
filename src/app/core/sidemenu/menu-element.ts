@@ -5,6 +5,12 @@ export const menus = [
     'link': '/dashboard',
     'open': false,
     'chip': {'value': 1, 'color': 'accent'},
+  },{
+    'name': 'Album',
+    'icon': 'list',
+    'link': '/albums/list',
+    'open': false,
+    'chip': {'value': 1, 'color': 'accent'},
   },
   {
     'name': 'Event',

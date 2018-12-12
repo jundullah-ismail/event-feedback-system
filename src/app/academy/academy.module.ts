@@ -28,6 +28,8 @@ import {CohortListPage} from './cohort-list.page';
 import {ApprenticeDetailPage} from './apprentice-detail.page';
 import {CohortDetailPage} from './cohort-detail.page';
 import {CohortStatusPipe} from './cohort-status.pipe';
+import {AlbumListPage} from './album-list.page';
+import {AlbumDetailPage} from './album-detail.page';
 
 @NgModule({
   imports: [
@@ -60,6 +62,8 @@ import {CohortStatusPipe} from './cohort-status.pipe';
     CohortListPage,
     CohortDetailPage,
     CohortStatusPipe,
+    AlbumListPage,
+    AlbumDetailPage,
   ],
   exports: []
 
