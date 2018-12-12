@@ -25,6 +25,6 @@ export class OrganizerListPage implements OnInit {
 
   view(organizer: Organizer): void {
     console.log(JSON.stringify(organizer));
-    this.router.navigate(['/feedback/organizer/', organizer.code]);
+    this.router.navigate(['/feedback/organizers/', organizer.code]);
   }
 }
