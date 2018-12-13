@@ -21,7 +21,6 @@ export class EventDetailPage implements OnInit {
       venue: ['', Validators.required],
       code: ['', Validators.required],
       totalAttendees: ['', Validators.required],
-      //email: ['', Validators.required],
     });
 
   }
