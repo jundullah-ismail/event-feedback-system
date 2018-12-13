@@ -11,6 +11,8 @@ import {AcademyModule} from './academy/academy.module';
 import {AcademyService} from '../services/academy.service';
 import {DashboardModule} from './dashboard/dashboard.module';
 import {FeedbackModule} from './feedback/feedback.module';
+import {MagicModule} from './magic/magic.module';
+import {MagicService} from '../services/magic.service';
 
 
 @NgModule({
@@ -27,8 +29,12 @@ import {FeedbackModule} from './feedback/feedback.module';
     DashboardModule,
     AcademyModule,
     FeedbackModule,
+    MagicModule,
   ],
-  providers: [AcademyService],
+  providers: [
+    AcademyService,
+    MagicService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

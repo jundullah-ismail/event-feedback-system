@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AcademyService} from '../../services/academy.service';
 import {Observable} from 'rxjs';
+import {AcademyService} from '../../services/academy.service';
 import {Album} from './album.model';
 import {Router} from '@angular/router';
 

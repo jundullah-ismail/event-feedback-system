@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {Router} from '@angular/router';
-import {Card} from './card.model';
 import {MagicService} from '../../services/magic.service';
+import {Card} from './card.model';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'trg-card-list',
@@ -10,7 +10,7 @@ import {MagicService} from '../../services/magic.service';
 })
 export class CardListPage implements OnInit {
 
-  public columns = ['name','manaCost', 'type'];
+  public columns = ['name','manaCost', 'type', 'id'];
   dataSource: Observable<Card[]>;
 
   constructor(private magicService: MagicService,
@@ -23,7 +23,7 @@ export class CardListPage implements OnInit {
 
   view(card: Card): void {
     console.log(JSON.stringify(card));
-    this.router.navigate(['/magic/card/', card.id]);
+    this.router.navigate(['/magic/cards/', card.id]);
   }
 
 }

@@ -9,6 +9,8 @@ import {OrganizerListPage} from './feedback/organizer-list.page';
 import {OrganizerDetailPage} from './feedback/organizer-detail.page';
 import {AlbumListPage} from './academy/album-list.page';
 import {AlbumDetailPage} from './academy/album-detail.page';
+import {CardListPage} from './magic/card-list.page';
+import {CardDetailPage} from './magic/card-detail.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -21,5 +23,7 @@ export const appRoutes: Routes = [{
     {path: 'feedback/organizers/:code', component: OrganizerDetailPage},
     {path: 'albums/list', component: AlbumListPage},
     {path: 'albums/:id', component: AlbumDetailPage},
+    {path: 'magic/cards/list', component: CardListPage},
+    {path: 'magic/cards/:id', component: CardDetailPage},
   ]
 }];

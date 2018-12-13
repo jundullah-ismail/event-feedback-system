@@ -4,7 +4,7 @@ import {subtype} from './subtype.model';
 import {ruling} from './rulings.model';
 import {printing} from './printing.model';
 
-export interface Card {
+export interface  Card {
 
   name: string;
   manaCost: string;
