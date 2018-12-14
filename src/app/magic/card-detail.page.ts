@@ -3,15 +3,17 @@ import {Observable} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
 import {Card} from './card.model';
 import {MagicService} from '../../services/magic.service';
+import {CardResult} from './card-result.model';
 
 
 @Component({
   selector: 'trg-card-detail',
   templateUrl: './card-detail.page.html',
+  styleUrls: ['./card-detail.page.scss']
 })
 export class CardDetailPage implements OnInit {
 
-  card$: Observable<Card>;
+  cardResult$: Observable<CardResult>;
   constructor(private magicService: MagicService,
               private route: ActivatedRoute) {
   }
@@ -19,7 +21,7 @@ export class CardDetailPage implements OnInit {
   ngOnInit(): void {
     // extracting param from url
     this.route.params.subscribe((params: { id: string }) => {
-      this.card$ = this.magicService.findCardById(params.id);
+      this.cardResult$ = this.magicService.findCardById(params.id);
     });
   }
 }

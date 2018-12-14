@@ -11,14 +11,14 @@ import {Router} from '@angular/router';
 export class AlbumListPage implements OnInit {
 
   public columns = ['id', 'title'];
-  datasource: Observable<Album[]>;
+  dataSourceAlbum: Observable<Album[]>;
 
   constructor(private academyService: AcademyService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.datasource = this.academyService.findAlbums();
+    this.dataSourceAlbum = this.academyService.findAlbums();
   }
 
   view(album: Album): void {
