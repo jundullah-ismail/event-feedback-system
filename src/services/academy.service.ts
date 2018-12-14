@@ -12,7 +12,7 @@ export class AcademyService {
   }
 
   findAlbums(): Observable<Album[]> {
-    return this.http.get<Album[]>('https://jsonplacehol der.typicode.com/albums');
+    return this.http.get<Album[]>('https://jsonplaceholder.typicode.com/albums');
   }
 
   findAlbumById(id: number): Observable<Album> {
