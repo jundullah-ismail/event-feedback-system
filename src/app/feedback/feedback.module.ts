@@ -30,6 +30,7 @@ import {OrganizerDetailPage} from './organizer-detail.page';
 import {OrganizerListPage} from './organizer-list.page';
 import {EventDetailPage} from './event-detail.page';
 import {EventListPage} from './event-list.page';
+import {ThreeLetterPipe} from './my-pipe.pipe';
 
 @NgModule({
   imports: [
@@ -63,6 +64,7 @@ import {EventListPage} from './event-list.page';
     OrganizerDetailPage,
     OrganizerListPage,
     EventDetailPage,
+    ThreeLetterPipe,
   ],
   exports: [],
 
