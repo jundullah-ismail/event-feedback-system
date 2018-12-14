@@ -12,7 +12,7 @@
       <!--show json object-->
       <!--{{dataSource | json}}-->
 
-      <mat-table #table [dataSource]="(cardResult$ | async)?.cards">
+      <mat-table #table [dataSource]="(cardListResult$ | async)?.cards">
 
         <!-- name column -->
         <ng-container matColumnDef="name">

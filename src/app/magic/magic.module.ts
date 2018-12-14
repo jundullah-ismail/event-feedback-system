@@ -13,7 +13,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {
-  MatButtonToggleModule,
+  MatButtonToggleModule, MatCardModule,
   MatCheckboxModule,
   MatChipsModule,
   MatNativeDateModule,
@@ -51,6 +51,7 @@ import {CardDetailPage} from './card-detail.page';
     MatTooltipModule,
     MatChipsModule,
     MatButtonToggleModule,
+    MatCardModule,
   ],
   declarations: [
     CardListPage,
