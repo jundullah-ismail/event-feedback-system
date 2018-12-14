@@ -1,9 +1,16 @@
 {
-  "id": 5,
+  "id": 1,
   "code": "ET0001",
   "name": "Lets Learn to Code",
   "venue": "Kuala Lumpur",
   "eventDate": "2018-12-11",
   "totalAttendees": 15,
-  "sponsorship": "Self-Sponsor"
+  "sponsorship": {
+    "id": 5,
+    "code": "ST-001",
+    "companyName": "AlifBaTa Sdn Bhd",
+    "sponsorshipType": "GOLD",
+    "amountSponsored": "RM1000"
+  }
+
 }
