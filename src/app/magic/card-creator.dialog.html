@@ -24,7 +24,13 @@
       <!--text-->
       <mat-form-field class="width">
         <input type="text" matInput placeholder="Enter Type" formControlName="type">
+        <mat-radio-group>
+          <mat-radio-button value="1">Creature</mat-radio-button>
+          <mat-radio-button value="2">Planeswalker</mat-radio-button>
+        </mat-radio-group>
+
       </mat-form-field>
+
 
       <button style="font-weight: bold;"
               mat-raised-button type="submit"

@@ -6,7 +6,7 @@ import {MatDialogRef} from '@angular/material';
   selector: 'trg-card-creator',
   templateUrl: './card-creator.dialog.html'
 })
-export class CardCreatorDialog implements OnInit{
+export class CardCreatorDialog implements OnInit {
 
   mainForm: FormGroup;
   submitted = false;
