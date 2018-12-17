@@ -1,0 +1,47 @@
+<div fxLayout="column"
+     class="components-container-gt-xs"
+     [ngClass.xs]="'components-container-xs'"
+     fxLayoutGap="20px">
+
+  <div fxFlex class="table-component-holder mat-elevation-z4">
+    <mat-toolbar class="table-header">
+      <h1 class="mat-headline center-align">Countries</h1>
+    </mat-toolbar>
+    <div class="table-container">
+
+      <!--show json object-->
+      <!--{{dataSource | json}}-->
+
+      <mat-table #table [dataSource] ="datasource">
+
+        <!-- name column -->
+        <ng-container matColumnDef="name">
+          <mat-header-cell *matHeaderCellDef> Country Name</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.name | uppercase}}</mat-cell>
+        </ng-container>
+
+        <!-- population column -->
+        <ng-container matColumnDef="population">
+          <mat-header-cell *matHeaderCellDef>Population</mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.population}}</mat-cell>
+        </ng-container>
+
+        <!-- flag cost column -->
+        <ng-container matColumnDef="flag">
+          <mat-header-cell *matHeaderCellDef>Flag</mat-header-cell>
+          <mat-cell *matCellDef="let row">
+            <mat-card>
+              <img height="150" width="300" [src]="row.flag"/>
+            </mat-card>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: columns;"
+                 (click)="view(row)"></mat-row>
+
+      </mat-table>
+
+    </div>
+  </div>
+</div>

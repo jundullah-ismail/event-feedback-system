@@ -18,6 +18,12 @@ export const menus = [
     'open': false,
     'chip': {'value': 1, 'color': 'accent'},
   },{
+    'name': 'Country',
+    'icon': 'list',
+    'link': '/country/countries/list',
+    'open': false,
+    'chip': {'value': 1, 'color': 'accent'},
+  },{
     'name': 'Event',
     'icon': 'list',
     'link': false,
@@ -45,4 +51,5 @@ export const menus = [
       },
     ]
   },
+
 ];
