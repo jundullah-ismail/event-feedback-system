@@ -18,6 +18,7 @@ import {
   MatChipsModule,
   MatNativeDateModule,
   MatPaginatorModule, MatRadioModule,
+  MatSelectModule,
   MatSortModule,
   MatTooltipModule
 } from '@angular/material';
@@ -55,6 +56,8 @@ import {CardListDialog} from './card-list-dialog';
     MatButtonToggleModule,
     MatCardModule,
     MatRadioModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   declarations: [
     CardListPage,

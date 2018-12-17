@@ -4,7 +4,8 @@
     <h1 class="mat-headline center-align">Card</h1>
   </mat-toolbar>
 
-  <div fxLayout="column"
+  <div [hidden] = "submitted"
+  fxLayout="column"
   class="widgetHolder-content"
   fxLayoutAlign="space-around stretch"
   style="background-color: #ffe5d5;">
@@ -22,13 +23,19 @@
       </mat-form-field>
 
       <!--text-->
-      <mat-form-field class="width">
-        <input type="text" matInput placeholder="Enter Type" formControlName="type">
-        <mat-radio-group>
-          <mat-radio-button value="1">Creature</mat-radio-button>
-          <mat-radio-button value="2">Planeswalker</mat-radio-button>
-        </mat-radio-group>
+      <!--<mat-form-field class="width">-->
+        <!--<input type="text" matInput placeholder="Enter Type" formControlName="type">-->
+        <!--<mat-radio-group>-->
+          <!--<mat-radio-button value="1">Creature</mat-radio-button>-->
+          <!--<mat-radio-button value="2">Planeswalker</mat-radio-button>-->
+        <!--</mat-radio-group>-->
+      <!--</mat-form-field>-->
 
+      <mat-form-field>
+        <mat-select placeholder="Select Type" formControlName="type">
+          <mat-option value="creature">Creature</mat-option>
+          <mat-option value="land">Land</mat-option>
+        </mat-select>
       </mat-form-field>
 
 
