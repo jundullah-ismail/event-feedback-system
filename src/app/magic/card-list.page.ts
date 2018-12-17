@@ -43,7 +43,7 @@ export class CardListPage implements OnInit {
     });
 
   }
-  show(): void {
+  show2(): void {
     const config = new MatDialogConfig();
     config.width = "600px";
     config.height = "480px";
