@@ -3,6 +3,8 @@ import {Observable} from 'rxjs';
 import {AcademyService} from '../../services/academy.service';
 import {Album} from './album.model';
 import {Router} from '@angular/router';
+import {MatDialog} from '@angular/material';
+import {SalamWorldDialog} from './salam-world.dialog';
 
 @Component({
   selector: 'trg-album-list',
@@ -14,7 +16,8 @@ export class AlbumListPage implements OnInit {
   dataSourceAlbum: Observable<Album[]>;
 
   constructor(private academyService: AcademyService,
-              private router: Router) {
+              private router: Router,
+              private dialog: MatDialog,) {
   }
 
   ngOnInit(): void {
@@ -24,6 +27,11 @@ export class AlbumListPage implements OnInit {
   view(album: Album): void {
     console.log(JSON.stringify(album));
     this.router.navigate(['/albums/', album.id]);
+
+  }
+
+  show(): void {
+  this.dialog.open(SalamWorldDialog)
   }
 
 }

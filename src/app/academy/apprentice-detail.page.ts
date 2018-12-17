@@ -15,6 +15,7 @@ export class ApprenticeDetailPage implements OnInit {
 
   constructor(private form: FormBuilder,
               private academyService: AcademyService) {
+
     this.mainForm = this.form.group({
       code: ['', Validators.required],
       name: ['', Validators.minLength(6)],

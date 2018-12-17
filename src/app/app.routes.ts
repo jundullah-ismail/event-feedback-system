@@ -11,6 +11,7 @@ import {AlbumListPage} from './academy/album-list.page';
 import {AlbumDetailPage} from './academy/album-detail.page';
 import {CardListPage} from './magic/card-list.page';
 import {CardDetailPage} from './magic/card-detail.page';
+import {CountryListPage} from './country/country-list.page';
 
 export const appRoutes: Routes = [{
   path: '', component: MainComponent, children: [
@@ -25,5 +26,6 @@ export const appRoutes: Routes = [{
     {path: 'albums/:id', component: AlbumDetailPage},
     {path: 'magic/cards/list', component: CardListPage},
     {path: 'magic/cards/:id', component: CardDetailPage},
+    {path: 'country/countries/list', component: CountryListPage},
   ]
 }];

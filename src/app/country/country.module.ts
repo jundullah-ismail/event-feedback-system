@@ -12,25 +12,20 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
 import {
   MatButtonToggleModule,
   MatCheckboxModule,
   MatChipsModule,
   MatNativeDateModule,
-  MatPaginatorModule, MatSnackBarModule,
+  MatPaginatorModule,
   MatSortModule,
   MatTooltipModule
 } from '@angular/material';
 
 import {MatTableModule} from '@angular/material/table';
-import {ApprenticeListPage} from './apprentice-list.page';
-import {CohortListPage} from './cohort-list.page';
-import {ApprenticeDetailPage} from './apprentice-detail.page';
-import {CohortDetailPage} from './cohort-detail.page';
-import {CohortStatusPipe} from './cohort-status.pipe';
-import {AlbumListPage} from './album-list.page';
-import {AlbumDetailPage} from './album-detail.page';
-import {SalamWorldDialog} from './salam-world.dialog';
+import {CountryListPage} from './country-list.page';
+
 
 @NgModule({
   imports: [
@@ -56,26 +51,13 @@ import {SalamWorldDialog} from './salam-world.dialog';
     MatTooltipModule,
     MatChipsModule,
     MatButtonToggleModule,
-    MatSnackBarModule,
+   MatCardModule,
   ],
-  declarations: [
-    ApprenticeListPage,
-    ApprenticeDetailPage,
-    CohortListPage,
-    CohortDetailPage,
-    CohortStatusPipe,
-    AlbumListPage,
-    AlbumDetailPage,
-    SalamWorldDialog,
-  ],
-  exports: [],
-  entryComponents:[
-  SalamWorldDialog,
-  ]
-
+  declarations: [CountryListPage,],
+  exports: []
 
 })
-export class AcademyModule {
+export class CountryModule {
 }
 
 

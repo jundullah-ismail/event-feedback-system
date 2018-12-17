@@ -9,8 +9,6 @@
     </mat-toolbar>
     <div class="table-container">
 
-      <!--show json object-->
-      <!--{{dataSource | json}}-->
 
       <mat-table #table [dataSource]="(cardListResult$ | async)?.cards">
 
@@ -41,8 +39,12 @@
     </div>
   </div>
 </div>
-
 <a mat-fab color="accent" class="fixed z-3"
    (click)="show()">
+  <mat-icon>add</mat-icon>
+</a>
+
+<a mat-fab color="accent" class="fixed z-3"
+   (click)="show2()">
   <mat-icon>add</mat-icon>
 </a>
