@@ -6,6 +6,7 @@ import {Router} from '@angular/router';
 import {CardListResult} from './card-list-result.model';
 import {MatDialog, MatDialogConfig, MatSnackBar, MatSnackBarConfig} from '@angular/material';
 import {CardCreatorDialog} from './card-creator.dialog';
+import {CardListDialog} from './card-list-dialog';
 
 @Component({
   selector: 'trg-card-list',
@@ -41,5 +42,15 @@ export class CardListPage implements OnInit {
         <MatSnackBarConfig>{duration: 3000});
     });
 
+  }
+  show2(): void {
+    const config = new MatDialogConfig();
+    config.width = "600px";
+    config.height = "480px";
+    const dialogRef = this.dialog.open(CardListDialog, config);
+    dialogRef.afterClosed().subscribe(result => {
+      this.snackBar.open('Message has been sent', '',
+        <MatSnackBarConfig>{duration: 3000});
+    });
   }
 }

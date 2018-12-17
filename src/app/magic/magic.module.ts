@@ -26,6 +26,7 @@ import {MatTableModule} from '@angular/material/table';
 import {CardListPage} from './card-list.page';
 import {CardDetailPage} from './card-detail.page';
 import {CardCreatorDialog} from './card-creator.dialog';
+import {CardListDialog} from './card-list-dialog';
 
 
 @NgModule({
@@ -58,10 +59,12 @@ import {CardCreatorDialog} from './card-creator.dialog';
   declarations: [
     CardListPage,
     CardDetailPage,
+    CardListDialog,
     CardCreatorDialog,
   ],
   exports: [],
   entryComponents: [
+    CardListDialog,
     CardCreatorDialog,
   ]
 

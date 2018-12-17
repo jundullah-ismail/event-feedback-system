@@ -11,6 +11,7 @@ export class AcademyService {
   constructor(private http: HttpClient) {
   }
 
+
   findAlbums(): Observable<Album[]> {
     return this.http.get<Album[]>('https://jsonplaceholder.typicode.com/albums');
   }

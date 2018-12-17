@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {Organizer} from './organizer.model';
 import {Router} from '@angular/router';
 import {EventService} from '../../services/event.service';
@@ -28,3 +28,5 @@ export class OrganizerListPage implements OnInit {
     this.router.navigate(['/feedback/organizers/', organizer.code]);
   }
 }
+
+
