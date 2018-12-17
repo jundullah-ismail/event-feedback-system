@@ -4,11 +4,16 @@ import {Observable} from 'rxjs';
 import {Apprentice} from '../app/academy/apprentice.model';
 import {Cohort} from '../app/academy/cohort.model';
 import {Album} from '../app/academy/album.model';
+import {Football} from '../app/academy/football.model';
 
 @Injectable()
 export class AcademyService {
 
   constructor(private http: HttpClient) {
+  }
+
+  findFootballs(): Observable<Football[]> {
+    return this.http.get<Football[]>('http://api.football-data.org/v1/teams/66/players');
   }
 
   findAlbums(): Observable<Album[]> {

@@ -18,4 +18,8 @@ export class MagicService {
   findCardById(id: string): Observable<CardResult> {
     return this.http.get<CardResult>('https://api.magicthegathering.io/v1/cards/' + id);
   }
+
+  findCardLayouts(): Observable<CardListResult> {
+    return this.http.get<CardListResult>('https://api.magicthegathering.io/v1/cards');
+  }
 }
