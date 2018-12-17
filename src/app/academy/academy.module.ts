@@ -30,7 +30,7 @@ import {CohortDetailPage} from './cohort-detail.page';
 import {CohortStatusPipe} from './cohort-status.pipe';
 import {AlbumListPage} from './album-list.page';
 import {AlbumDetailPage} from './album-detail.page';
-import {SalamWorldDialog} from './salam-world..dialog';
+import {SalamWorldDialog} from './salam-world.dialog';
 
 @NgModule({
   imports: [

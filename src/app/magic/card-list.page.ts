@@ -4,6 +4,8 @@ import {MagicService} from '../../services/magic.service';
 import {Card} from './card.model';
 import {Router} from '@angular/router';
 import {CardListResult} from './card-list-result.model';
+import {MatDialog, MatDialogConfig, MatSnackBar, MatSnackBarConfig} from '@angular/material';
+import {CardCreatorDialog} from './card-creator.dialog';
 
 @Component({
   selector: 'trg-card-list',
@@ -15,7 +17,9 @@ export class CardListPage implements OnInit {
   cardListResult$: Observable<CardListResult>;
 
   constructor(private magicService: MagicService,
-              private router: Router) {
+              private router: Router,
+              private dialog: MatDialog,
+              private snackBar: MatSnackBar) {
   }
 
   ngOnInit(): void {
@@ -27,4 +31,15 @@ export class CardListPage implements OnInit {
     this.router.navigate(['/magic/cards/', card.id]);
   }
 
+  show(): void {
+    const config = new MatDialogConfig();
+    config.width = "600px";
+    config.height = "480px";
+    const dialogRef = this.dialog.open(CardCreatorDialog, config);
+    dialogRef.afterClosed().subscribe(result => {
+      this.snackBar.open('Message has been sent', '',
+        <MatSnackBarConfig>{duration: 3000});
+    });
+
+  }
 }

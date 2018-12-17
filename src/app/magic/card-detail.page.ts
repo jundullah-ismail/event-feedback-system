@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
 import {ActivatedRoute} from '@angular/router';
-import {Card} from './card.model';
+//import {Card} from './card.model';
 import {MagicService} from '../../services/magic.service';
 import {CardResult} from './card-result.model';
 

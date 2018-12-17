@@ -4,7 +4,7 @@ import {AcademyService} from '../../services/academy.service';
 import {Album} from './album.model';
 import {Router} from '@angular/router';
 import {MatDialog} from '@angular/material';
-import {SalamWorldDialog} from './salam-world..dialog';
+import {SalamWorldDialog} from './salam-world.dialog';
 
 @Component({
   selector: 'trg-album-list',
