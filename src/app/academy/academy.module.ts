@@ -17,7 +17,7 @@ import {
   MatCheckboxModule,
   MatChipsModule,
   MatNativeDateModule,
-  MatPaginatorModule,
+  MatPaginatorModule, MatSnackBarModule,
   MatSortModule,
   MatTooltipModule
 } from '@angular/material';
@@ -30,6 +30,7 @@ import {CohortDetailPage} from './cohort-detail.page';
 import {CohortStatusPipe} from './cohort-status.pipe';
 import {AlbumListPage} from './album-list.page';
 import {AlbumDetailPage} from './album-detail.page';
+import {SalamWorldDialog} from './salam-world..dialog';
 
 @NgModule({
   imports: [
@@ -55,6 +56,7 @@ import {AlbumDetailPage} from './album-detail.page';
     MatTooltipModule,
     MatChipsModule,
     MatButtonToggleModule,
+    MatSnackBarModule,
   ],
   declarations: [
     ApprenticeListPage,
@@ -64,8 +66,13 @@ import {AlbumDetailPage} from './album-detail.page';
     CohortStatusPipe,
     AlbumListPage,
     AlbumDetailPage,
+    SalamWorldDialog,
   ],
-  exports: []
+  exports: [],
+  entryComponents:[
+  SalamWorldDialog,
+  ]
+
 
 })
 export class AcademyModule {
