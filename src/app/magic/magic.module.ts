@@ -25,8 +25,10 @@ import {
 import {MatTableModule} from '@angular/material/table';
 import {CardListPage} from './card-list.page';
 import {CardDetailPage} from './card-detail.page';
+import {CardListDialog} from './card-list-dialog';
 
 
+// @ts-ignore
 @NgModule({
   imports: [
     CommonModule,
@@ -56,9 +58,12 @@ import {CardDetailPage} from './card-detail.page';
   declarations: [
     CardListPage,
     CardDetailPage,
+    CardListDialog,
   ],
-  exports: []
-
+  exports: [],
+  entryComponents: [
+     CardListDialog,
+  ]
 })
 export class MagicModule {
 }
