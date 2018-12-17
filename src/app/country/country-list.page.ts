@@ -11,14 +11,14 @@ import {CountryService} from '../../services/country.service';
 export class CountryListPage implements OnInit {
 
   public columns = ['name', 'population', 'flag'];
-  datasource: Observable<Country[]>;
+  dataSource: Observable<Country[]>;
 
   constructor(private countryService: CountryService,
               private router: Router) {
   }
 
   ngOnInit(): void {
-    this.datasource = this.countryService.findCountries();
+    this.dataSource = this.countryService.findCountries();
   }
 
   view(country: Country): void {

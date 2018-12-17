@@ -13,8 +13,8 @@ import {DashboardModule} from './dashboard/dashboard.module';
 import {FeedbackModule} from './feedback/feedback.module';
 import {MagicModule} from './magic/magic.module';
 import {MagicService} from '../services/magic.service';
-//import {CountryModule} from './country/country.module';
-//import {CountryService} from '../services/country.service';
+import {CountryModule} from './country/country.module';
+import {CountryService} from '../services/country.service';
 
 @NgModule({
   declarations: [
@@ -31,12 +31,12 @@ import {MagicService} from '../services/magic.service';
     AcademyModule,
     FeedbackModule,
     MagicModule,
-    //CountryModule,
+    CountryModule,
   ],
   providers: [
     AcademyService,
     MagicService,
-    //CountryService,
+    CountryService,
   ],
   bootstrap: [AppComponent]
 })
